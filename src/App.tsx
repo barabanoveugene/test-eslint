@@ -1,8 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from "./logo.svg";
 import './App.css';
 
 function App() {
+  console.log("Hello");
+  function getName() {
+    var users: Array<number> = [1, 2, 3, 4, 5, 6, 7];
+    var userName = users.map((item: number, index: number) => {
+      var sum = index + item;
+      return sum;
+    })
+   }
   return (
     <div className="App">
       <header className="App-header">
